@@ -21,6 +21,11 @@
 - **Sport Subscription:** Enables trainees to subscribe to a sport.
 - **Trainee Information:** Displays information about the trainee and the sports they participate in.
 
+### Tools and Technologies
+- **Languages:** C#, SQL, HTML, CSS
+- **Framework:** ASP.NET, SSMS
+- **IDE:** Visual Studio
+
 [Report.pdf](https://github.com/user-attachments/files/15918017/Report.pdf)
 
 
