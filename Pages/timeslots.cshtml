@@ -1,0 +1,93 @@
+@page
+@model admin_view.Pages.timeslots
+
+@{
+    ViewData["Title"] = "Timeslots";
+}
+
+<h4>Timeslots:</h4>
+<br/>
+<h5>Teams:</h5>
+<table class="table">
+    <thead>
+    <th>Team</th>
+    <th>Timeslot 1</th>
+    <th>Timeslot 2</th>
+    <th>Timeslot 3</th>
+    <th>Court</th>
+    <th>Coach</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Team 1</td>
+        <td>Monday 8pm - 10pm</td>
+        <td>Wednesday 8pm - 10pm</td>
+        <td>Saturday 8pm - 10pm</td>
+        <td>Sport court 1</td>
+        <td>Mohamed Ahmed</td>
+    </tr>
+    <tr>
+        <td>Team 2</td>
+        <td>Monday 8pm - 10pm</td>
+        <td>Wednesday 8pm - 10pm</td>
+        <td>Saturday 8pm - 10pm</td>
+        <td>Sport court 2</td>
+        <td>Ahmed Mohamed</td>
+    </tr>
+    </tbody>
+</table>
+
+<div style="display: flex;">
+    <form asp-page-handler="addteam" method="post" style="margin-right: 10px;">
+        <button class="btn btn-outline-success">Add Team</button>
+    </form>
+    <form asp-page-handler="editteam" method="post">
+        <button class="btn btn-outline-info">Edit Team</button>
+    </form>
+</div>
+
+<br/>
+<br>
+
+
+<h5>Groups:</h5>
+<table class="table">
+    <thead>
+    <th>Group</th>
+    <th>Timeslot 1</th>
+    <th>Timeslot 2</th>
+    <th>Timeslot 3</th>
+    <th>Court</th>
+    <th>Coach</th>
+    <th>Close subscription</th>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Group 1</td>
+        <td>Sunday 8pm - 10pm</td>
+        <td>Tuesday 8pm - 10pm</td>
+        <td>Thursday 8pm - 10pm</td>
+        <td>Sport court 1</td>
+        <td>Mohamed Ahmed</td>
+        <td><input type="checkbox" id="close"></td>
+    </tr>
+    <tr>
+        <td>Group 2</td>
+        <td>Sunday 8pm - 10pm</td>
+        <td>Tuesday 8pm - 10pm</td>
+        <td>Thursday 8pm - 10pm</td>
+        <td>Sport court 2</td>
+        <td>Ahmed Mohamed</td>
+        <td><input type="checkbox" id="close"></td>
+    </tr>
+    </tbody>
+</table>
+
+<div style="display: flex;">
+    <form asp-page-handler="addgroup" method="post" style="margin-right: 10px;">
+        <button class="btn btn-outline-success">Add Group</button>
+    </form>
+    <form asp-page-handler="editgroup" method="post">
+        <button class="btn btn-outline-info">Edit Group</button>
+    </form>
+</div>

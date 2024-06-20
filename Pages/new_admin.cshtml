@@ -1,0 +1,29 @@
+@page
+@model admin_view.Pages.new_admin
+
+@{
+}
+<h5>Enter new admin info:</h5>
+<br/>
+
+<label for="un">Username: </label>
+<br/>
+<input type="text" id="un" asp-for="username">
+<br/>
+<br/>
+
+<label for="pw">Password: </label>
+<br/>
+<input type="password" id="pw" asp-for="userpw">
+<br/>
+<br/>
+
+<label for="sport">Sport: </label>
+<br/>
+<input type="text" id="sport" asp-for="sport">
+<br/>
+<br/>
+
+<form method="post">
+    <button class="btn btn-outline-success">Add Admin</button>
+</form>

@@ -1,0 +1,90 @@
+﻿@page
+@model sub
+
+@{
+}
+<style>
+    div1{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        margin-right: 150px;
+        margin-left: 20px;
+    }
+
+    p {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        margin-right: 75px;
+        margin-left: 20px;
+    }
+   button{
+       margin-top: 25px;
+        background-color: green;
+   }
+</style>
+
+<div1 class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Choose Sport
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+            <a href="#">football</a>
+        </li>
+        <li>
+            <a href="#">baseball</a>
+        </li>
+        <li>
+            <a href="#">swimming</a>
+        </li>
+    </ul>
+</div1>
+
+<div1 class="dropdown">
+    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+        Available Time-Slots
+        <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+        <li>
+            <a href="#">sun 5</a>
+        </li>
+        <li>
+            <a href="#">fri 7</a>
+        </li>
+        <li>
+            <a href="#">wed 8</a>
+        </li>
+    </ul>
+</div1>
+<p> total fee: ### EGP </p>
+<p>subscription ID: ####</p>
+<p>payment method: </p>
+<label class="radio-inline"><input type="radio" name="optradio" checked>visa</label>
+<label class="radio-inline"><input type="radio" name="optradio">cash</label>
+
+<form action="/action_page.php">
+    <label for="password">Password: </label><br>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="glyphicon glyphicon-lock"></i>
+        </span>
+        <input id="password" type="password" class="form-control" name="password">
+    </div>
+    <label for="secpassword">the other Password: </label><br>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="glyphicon glyphicon-lock"></i>
+        </span>
+        <input id="password" type="password" class="form-control" name="password">
+    </div>
+    <label for="expdate">Expiration Date: </label><br>
+    <div class="input-group">
+        <span class="input-group-addon">
+            <i class="glyphicon glyphicon-lock"></i>
+        </span>
+        <input id="password" type="password" class="form-control" name="password">
+    </div>
+    <button type="button" class="btn btn-success">submit</button>
+</form>

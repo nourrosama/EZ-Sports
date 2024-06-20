@@ -1,0 +1,46 @@
+@page
+@model admin_view.Pages.edit_group
+@{
+    ViewData["Title"] = "Edit";
+}
+<h4>Edit Info:</h4>
+<br/>
+
+<label for="id">ID:</label>
+<input type="text" id="id">
+<br/>
+<br/>
+
+<p>Information to be edited:</p>
+
+<input type="radio" name="info" id="ts1">
+<label for="ts1">Timeslot 1</label>
+<br/>
+
+<input type="radio" name="info" id="ts2">
+<label for="ts2">Timeslot 2</label>
+<br/>
+
+<input type="radio" name="info" id="ts3">
+<label for="ts3">Timeslot 3</label>
+<br/>
+
+<input type="radio" name="info" id="court">
+<label for="court">Court</label>
+<br/>
+
+<input type="radio" name="info" id="coach">
+<label for="coach">Coach</label>
+<br/>
+
+<input type="radio" name="info" id="cap">
+<label for="cap">Capacity</label>
+<br/>
+<br/>
+
+<label for="new_info">New info:</label>
+<input type="text" id="new_info">
+<br/>
+<br/>
+
+<button class="btn btn-outline-success">Go</button>

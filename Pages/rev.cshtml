@@ -1,0 +1,51 @@
+﻿@page
+@using System.Data
+@model rev
+
+@{
+}
+
+@*<!DOCTYPE html>*@
+
+<style>
+       table {
+        margin-top:20px;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #DDD;
+    }
+
+    tr:hover {
+        background-color: #D6EEEE;
+    }
+
+    button{
+        margin-top:10px;
+    }
+</style>
+
+
+<p>Total reviews: @Model.Totalrevs</p>
+<table class="table">
+    <tr>
+        <th>trainee id</th>
+        <th>coach id</th>
+        <th>rating</th>
+        <th>comment</th>
+    </tr>
+
+    @foreach (DataRow row in Model.review.Rows)
+    {
+        <tr>
+            <td>@row["trainee_id"].ToString()</td>
+            <td>@row["coach_id"].ToString()</td>
+            <td>@row["rate"].ToString()</td>
+            <td>@row["comment"].ToString()</td>
+        </tr>
+    }
+</table>

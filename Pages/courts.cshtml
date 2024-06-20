@@ -1,0 +1,32 @@
+@page
+@model admin_view.Pages.courts
+
+@{
+    ViewData["Title"] = "Courts";
+}
+
+<h4>Courts:</h4>
+<br/>
+<table class="table">
+    <thead>
+    <th>Court</th>
+    <th>Location</th>
+    <th>Maintained</th>
+    </thead>
+    <tbody>
+    @{
+        for (int i = 0; i < @Model.courttot; i++)
+        {
+            <tr>
+                <td>@Model.court_id[i]</td>
+                <td>@Model.location[i]</td>
+                <td>@Model.maintained[i]</td>
+            </tr>
+        }
+    }
+    </tbody>
+</table>
+
+<form method="post">
+    <button class="btn btn-outline-info">Change maintenance status</button>
+</form>

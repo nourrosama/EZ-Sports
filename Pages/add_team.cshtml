@@ -1,0 +1,55 @@
+@page
+@model admin_view.Pages.add_team
+@{
+    ViewData["Title"] = "Add Team";
+}
+<h4>Add Info:</h4>
+
+<div class="d-flex flex-column">
+    
+    <div class="mr-auto p-2">
+        <label for="ts1">Timeslot 1: </label>
+        <br/>
+        <input type="text" name="info" id="ts1">
+        <br/>
+    </div> 
+
+    <div class="p-2">
+        <label for="ts2">Timeslot 2: </label>
+        <br/>
+        <input type="text" name="info" id="ts2">
+        <br/>
+    </div> 
+
+    <div class="p-2">
+        <label for="ts3">Timeslot 3: </label>
+        <br/>
+        <input type="text" name="info" id="ts3">
+        <br/>
+    </div> 
+
+    <div class="p-2">
+        <label for="court">Court: </label>
+        <br/>
+        <input type="text" name="info" id="court">
+        <br/>
+    </div>
+
+    <div class="p-2">
+        <label for="coach">Coach: </label>
+        <br/>
+        <input type="text" name="info" id="coach">
+        <br/>
+    </div>
+    
+    <div class="p-2">
+            <label for="team">Team members: </label>
+            <br/>
+            @* checklist with team members to add them *@
+            <input type="text" name="info" id="team">
+            <br/>
+    </div>
+
+</div>
+<br/>
+<button class="btn btn-outline-success">Go</button>

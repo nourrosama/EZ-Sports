@@ -1,0 +1,16 @@
+﻿@page
+@model coach_view.Pages.RequestsModel
+@{
+}
+    <h1>Requests Form</h1>
+    <form>
+    <p>  
+       <label class="form-label" for="name"> Name: </label>
+        <input class="form-control" type="text" id="name" name="name" placeholder="Enter Admin Name">
+    </p>
+        <p>
+            <label class="form-label" for="description">Write Your Request:</label>
+            <textarea class="form-control" id="description" rows="4"></textarea>
+        </p>
+    <a class="btn btn-primary"> Submit </a> @* redirect to inquiry page *@
+    </form>

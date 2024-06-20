@@ -1,0 +1,15 @@
+@page
+@model admin_view.Pages.court_maint
+
+@{
+}
+
+<label for="id">CourtID: </label>
+<input type="number" id="id">
+<br/>
+
+<p>Previous status: @Model.old_stat</p>
+
+<form method="post">
+    <button class="btn btn-outline-success">Change status</button>
+</form>
