@@ -1,7 +1,5 @@
 # EZ-Sports
 ## Overview
-The document seems to outline different functionalities and views for users in a sports management system. Here’s a brief description of each view and their functionalities:
-
 ### User Log In/Sign Up
 - **User Log In:** Allows existing users to log in to their accounts.
 - **New User Sign Up:** Allows new users to create an account.
